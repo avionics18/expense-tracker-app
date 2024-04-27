@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useAddTransaction } from "../../hooks/useAddTransaction";
 import { useGetTransactions } from "../../hooks/useGetTransactions";
 import AppHeader from "./AppHeader";
