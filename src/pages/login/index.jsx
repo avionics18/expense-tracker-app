@@ -26,7 +26,7 @@ export const Login = () => {
       <div className="container">
         <div className="row vh-100 justify-content-center align-items-center">
           <div className="col-5">
-            <div className="card border-danger py-4 shadow mt-5">
+            <div className="card rounded-4 py-4 shadow mt-5">
               <div className="card-body text-center">
                 <img
                   className="bg-dark rounded p-2"
@@ -44,10 +44,13 @@ export const Login = () => {
                 <p className="card-text">
                   Login to continue to Expense Tracker:
                 </p>
-                <button className="btn btn-danger" onClick={signInWithGoogle}>
+                <button
+                  className="btn btn-danger fw-semibold rounded-pill py-2 px-4"
+                  onClick={signInWithGoogle}
+                >
                   <img
                     className="me-3 bg-white rounded"
-                    width="30"
+                    width="26"
                     src={googleLogo}
                     alt="Google Authentication"
                   />

@@ -5,7 +5,7 @@
       rgba(var(--bs-danger-rgb), 0.9),
       rgba(var(--bs-danger-rgb), 0.9)
     ),
-    url("./assets/login-bg.png") no-repeat center;
+    url("./assets/login-bg.webp") no-repeat center;
   background-size: cover;
 }
 
