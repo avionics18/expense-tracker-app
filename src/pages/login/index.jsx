@@ -2,6 +2,7 @@ import { auth, provider } from "../../config/firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import googleLogo from "../../assets/google-logo.webp";
+import appLogo from "../../assets/app-logo.png";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -27,8 +28,15 @@ export const Login = () => {
           <div className="col-5">
             <div className="card border-danger py-4 shadow mt-5">
               <div className="card-body text-center">
-                <i className="fa fa-money fa-3x text-danger"></i>
-                <h1 className="fs-3 fw-bold text-uppercase">Expense Tracker</h1>
+                <img
+                  className="bg-dark rounded p-2"
+                  width="60"
+                  src={appLogo}
+                  alt="Expense Tracker Logo"
+                />
+                <h1 className="fs-3 fw-bold text-uppercase mt-3">
+                  Expense Tracker
+                </h1>
                 <p className="lead">
                   I got 99 problems but tracking expenses ain't one.
                 </p>

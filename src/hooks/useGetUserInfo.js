@@ -6,7 +6,7 @@ export const useGetUserInfo = () => {
 
   if (localStorage.getItem("auth") !== null) {
     ({ isAuth, name, profilePhoto, userID } = JSON.parse(
-      localStorage.getItem("auth")
+      localStorage.getItem("auth"),
     ));
   }
 

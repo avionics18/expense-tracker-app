@@ -24,9 +24,9 @@ const ExpenseSummary = ({ transactions }) => {
 
   const printBalance = () => {
     if (balance >= 0) {
-      return "$" + balance;
+      return "₹" + balance;
     } else {
-      return "-$" + balance * -1;
+      return "-₹" + balance * -1;
     }
   };
 
@@ -53,7 +53,7 @@ const ExpenseSummary = ({ transactions }) => {
                 Your Income
               </div>
               <div className="card-body">
-                <p className="card-text h4">{totalIncome}</p>
+                <p className="card-text h4">₹{totalIncome}</p>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ const ExpenseSummary = ({ transactions }) => {
                 Your Expenses
               </div>
               <div className="card-body">
-                <p className="card-text h4">${totalExpenses}</p>
+                <p className="card-text h4">₹{totalExpenses}</p>
               </div>
             </div>
           </div>

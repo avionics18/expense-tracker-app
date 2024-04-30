@@ -41,7 +41,7 @@ const TransactionForm = ({ onSubmitHandler }) => {
                 Amount
               </label>
               <div className="input-group input-group">
-                <span className="input-group-text">$</span>
+                <span className="input-group-text">₹</span>
                 <input
                   type="number"
                   className="form-control"

@@ -19,7 +19,7 @@ const TransactionList = ({ transactions }) => {
               >
                 {t.transactionType}
               </span>
-              <span className="fw-bold">{"$" + t.transactionAmount}</span>
+              <span className="fw-bold">{"₹" + t.transactionAmount}</span>
             </li>
           ))}
         </ul>

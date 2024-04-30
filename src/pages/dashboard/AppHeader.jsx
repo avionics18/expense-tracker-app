@@ -2,6 +2,7 @@ import { useGetUserInfo } from "../../hooks/useGetUserInfo";
 import { signOut } from "firebase/auth";
 import { auth } from "../../config/firebase-config";
 import { useNavigate } from "react-router-dom";
+import appLogo from "../../assets/app-logo.png";
 
 const AppHeader = () => {
   const { name, profilePhoto } = useGetUserInfo();
@@ -21,8 +22,9 @@ const AppHeader = () => {
     <div className="bg-danger py-3 border-bottom border-4 border-danger-subtle mb-5">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
-          <h1 className="brand fs-4 font-monospace fw-bold text-white m-0">
-            <i className="fa fa-money"></i> Expense Tracker
+          <h1 className="brand d-flex align-items-center fs-4 font-monospace fw-bold text-white m-0">
+            <img width="30" src={appLogo} alt="Expense Tracker Logo" />
+            <span className="ms-2">Expense Tracker</span>
           </h1>
           <div className="account-details d-flex align-items-center">
             {profilePhoto && (

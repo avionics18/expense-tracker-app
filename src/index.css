@@ -1,13 +1,15 @@
 .login-wrapper {
-	background:
-		linear-gradient(0deg,
-			rgba(var(--bs-danger-rgb), 0.9),
-			rgba(var(--bs-danger-rgb), 0.9)),
-		url("./assets/login-bg.png") no-repeat center;
-	background-size: cover;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(var(--bs-danger-rgb), 0.9),
+      rgba(var(--bs-danger-rgb), 0.9)
+    ),
+    url("./assets/login-bg.png") no-repeat center;
+  background-size: cover;
 }
 
 .transaction-list .card-body {
-	max-height: 212px;
-	overflow: auto;
+  max-height: 212px;
+  overflow: auto;
 }

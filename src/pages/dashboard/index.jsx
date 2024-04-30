@@ -13,7 +13,7 @@ export const Dashboard = () => {
     e,
     description,
     transactionAmount,
-    transactionType
+    transactionType,
   ) => {
     e.preventDefault();
     addTransaction({
